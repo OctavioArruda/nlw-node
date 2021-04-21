@@ -35,5 +35,8 @@
   - Query Params => Filtros e buscas
   - Body Params => Inserções, passar objetos dentro da requisição(json)
 
+  ## Services: o que são?
+  - Armazenam a regra de negócio para isolar bem cada serviço
+
 
 
