@@ -24,3 +24,16 @@
   > Dessa forma, para variás aplicações front-end, podemos usar o mesmo back-end, sem problema algum
   > Simplifica o desenvolvimento, pois se para cada front-end precisassemos de um back-end, a mesma regra de negócio aparecia repetidamente
 
+  ## Migrations: o que são?
+  - Sistema de versionamento para o banco de dados
+
+  ## Repositórios: o que são?
+  - Estrutura(classe) que será responsável por fazer toda manipulação de dados na aplicação
+
+  ## Tipos de parâmetros:
+  - Route Params => Parâmetros de rotas
+  - Query Params => Filtros e buscas
+  - Body Params => Inserções, passar objetos dentro da requisição(json)
+
+
+

@@ -1,20 +1,11 @@
-import express, { response } from "express";
+import express from "express";
 
-const app = express();
+import "./database";
+import {routes} from "./routes";  
+
 const listenPort = 3333;
+const app = express();
+app.use(express.json());
+app.use(routes);
+app.listen(3333, () => `Server is running on port ${listenPort}`);
 
-app.get("/", (req, res) => {
-  return res.json({
-    message: "Hello node",
-  });
-});
-
-app.post("/user", (req, res) => {
-  return res.json({
-    message: "User created",
-  });
-});
-
-app.listen(listenPort, () => {
-  console.log(`Server is running on port ${listenPort}`)
-});
