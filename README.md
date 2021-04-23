@@ -38,5 +38,23 @@
   ## Services: o que são?
   - Armazenam a regra de negócio para isolar bem cada serviço
 
+  ## O que é Websocket?
+  ### Entendendo protocolo HTTP:
+  > Lado cliente: toda vez que o cliente precisa de uma resposta do servidor, ele envia uma requisição e fica aguardando por uma resposta.
+  - Como acontece a comunicação?
+  > Lado servidor: toda vez que uma nova requisição é aberta pelo cliente, uma nova __conexão__ é aberta entre o cliente e o servidor
+  - A conexão é fechada quando o servidor envia a resposta.
+  - O servidor não consegue ficar enviando informações, nem saber qual é o cliente que está conectado, pois as conexões são fechadas.
+  - Este processo se torna __custoso__
+  ### Entendendo protocolo WS / Websocket
+  > Cliente: se conecta ao servidor
+  - Como acontece a comunicação?
+  > Servidor: hosteia uma nova conexão 
+  - Porém, essa conexão só é fechada quando o cliente __desconectar__
+  - Podemos enviar mensagens para todos sockets, todos que estiverem conectados, sem problema nenhum
+  - Costumeiramente usado para __chats__ onde mensagens vão e vem com frequência
+
+  ### Socket.io
+
 
 
